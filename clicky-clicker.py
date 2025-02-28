@@ -78,6 +78,9 @@ class ScreenClicker:
         self.canvas.bind("<Shift-B1-Motion>", self.on_mouse_drag)
         self.canvas.bind("<Shift-ButtonRelease-1>", self.on_mouse_up)
         
+        # Add binding for regular clicks to bring control window to front
+        self.canvas.bind("<Button-1>", lambda e: self.control_window.lift())
+        
         # Bind escape key to quit and handle window closing
         self.root.bind("<Escape>", lambda e: self.quit())
         self.control_window.protocol("WM_DELETE_WINDOW", self.quit)
