@@ -1,8 +1,8 @@
-# ClickyClicker - Screen Auto-Clicker
+# ClickyClicker - an Automated Clicking application created by Timothy J Kennedy
 
 ## Overview
 
-ClickyClicker is a simple automation tool that allows you to define specific rectangular areas on your screen and have the computer automatically click within those areas sequentially.
+ClickyClicker is a simple automation tool that allows you to define specific rectangular areas on your screen and have the computer automatically click a random spot within those areas sequentially.
 
 It features:
 *   A transparent overlay for drawing click zones.
@@ -12,7 +12,7 @@ It features:
 
 ## How to Use
 
-1.  **Run the Application:** Launch the `ClickyClicker` executable (or run the Python script).
+1.  **Run the Application:** Launch the `ClickyClicker` executable.
 
 2.  **Interface:**
     *   **Overlay:** A mostly transparent window will cover your selected monitor.
