@@ -355,8 +355,8 @@ class ScreenClicker:
                 # Create permanent rectangle on canvas (using UNscaled canvas coordinates)
                 area_rect = self.canvas.create_rectangle(
                     canvas_x1, canvas_y1, canvas_x2, canvas_y2,
-                    outline="green", width=5,
-                    fill='lightgreen'
+                    outline="lime", width=5,  # Changed outline to lime
+                    fill='palegreen'         # Changed fill to palegreen
                 )
                 
                 # Add numbered label to the click area (using canvas coordinates)
@@ -464,7 +464,7 @@ class ScreenClicker:
                 time.sleep(area_interval_ms / 1000)
                 
                 # Restore area appearance on the canvas (using canvas coords)
-                self.root.after(0, lambda a=area: self.canvas.itemconfig(a["rect"], outline="green", fill='lightgreen'))
+                self.root.after(0, lambda a=area: self.canvas.itemconfig(a["rect"], outline="lime", fill='palegreen'))
 
     def update_status(self, message):
         """Update the status message in the UI thread-safely."""
